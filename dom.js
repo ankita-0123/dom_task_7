@@ -48,14 +48,14 @@ newDiv.style.fontSize = '20px';
 container.insertBefore(newDiv,h1);
 
 var newLi = document.createElement('li');
-newLi.className = 'Hello';
+newLi.className = 'list-group-item';
 newLi.style.fontSize ='10px';
 var newLiText = document.createTextNode('Hello world');
 newLi.appendChild(newLiText);
-var list_group_item = document.querySelector('item .list-group-item');
-var li = document.querySelector('item li');
+
 console.log(newLi);
 
+itemList.prepend(newLi);
 
 
 
